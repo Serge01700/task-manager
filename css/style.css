@@ -1,0 +1,500 @@
+* {
+    margin : 0;
+    padding :0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#form-container2 {
+    max-width: 1300px;
+    margin: 0 auto; 
+    padding: 20px;
+    border: solid black 1px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: #285598;
+    padding: 20px 40px;
+} 
+
+.header-right {
+    display: flex;
+}
+
+.header-right a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: color 0.3s;
+}
+
+.header-right:hover a:hover {
+    color: #3498db;
+}
+
+header > div {
+    display: flex;
+    align-items: center; 
+}
+
+header > div:hover {
+    background-color: white;
+    color: #285598;
+}
+
+header > div > a {
+    color: white;
+    margin: 5px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: color 0.3s, background-color 0.3s; 
+}
+
+header > div:hover > a {
+    color: #285598;
+    background-color: white;
+}
+
+.statut {
+    margin: 45px;
+    display: flex;
+    justify-content:flex-end;
+    font-family: sans-serif;
+    word-spacing: 10px;
+}
+
+.statut > img {
+    width: auto;
+    height: 25px;
+    margin: 0 7px 14px 17px ;
+}
+
+#list-buttons {
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#tasks {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 400px;
+    box-shadow: 0 0 10px black  ;
+}
+
+.header {
+    padding: 20px;
+    text-align: center;
+    background-color: #3498db;
+    color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.task-container {
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+ .progress , .pause , .finished {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #3498db;
+} 
+
+.progress img {
+    width: 50px;
+    height: 50px;
+}
+
+.pause img {
+    width: 50px;
+    height: 50px;
+}
+
+#taskList {
+    text-align: center;
+    padding: 20px;
+}
+
+#create {
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+#list-buttons > button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+#create:hover {
+    background-color: #2980b9;
+}
+
+#list-buttons > button:hover {
+    background-color: #2980b9;
+}
+
+.task {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#importance {
+    color: green;
+    font-size: 25px;
+    position: relative;
+    top : -45px ;
+    left : 50px ;
+}
+
+#importance2 {
+    color: red;
+    font-size: 25px;
+    position: relative;
+    top : -45px ;
+    left : 50px ;
+}
+
+#importance3 {
+    color: rgb(255, 166, 0);
+    font-size: 25px;
+    position: relative;
+    top : -45px ;
+    left : 50px ;
+}
+
+
+header > div:hover > a,
+header > div:hover {
+  color: var(--primary-color);
+  background-color: rgb(255, 255, 255);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+
+footer {
+    position: relative;
+    background-color: #285598;
+    color: white;
+    padding: 40px 0; /* Increased padding for a more spacious look */
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column; /* Adjusted to a column layout for better alignment */
+    align-items: center;
+}
+
+.footer-links {
+    margin-top: 20px; /* Added some spacing between links and info */
+}
+
+.footer-links > a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold; /* Made the links bold for better visibility */
+    margin: 0 20px;
+    transition: color 0.3s; /* Added a smooth transition effect */
+}
+
+.footer-links > a:hover {
+    color: #3498db;
+}
+
+.footer-info {
+    font-size: 16px; /* Increased font size for better readability */
+    margin-top: 20px; /* Added some spacing between links and info */
+}
+
+@media only screen and (max-width: 600px) {
+    .statut  {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }}
+
+/* Log */
+
+#log {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border: solid black 1px;
+}
+
+#login {
+    margin-top: 15px;
+    font-weight: 900;
+    text-align: center;
+}
+
+ /* #log > #login {
+    margin-top: 15px;
+    font-weight:900;
+    text-align: center;
+}
+#log_sub {
+   text-align: center;
+}  */
+ 
+.image-container {
+    text-align: center;
+    margin: 25px;
+}
+
+.image-container img {
+    display: block; 
+    margin: 0 auto; 
+}
+
+#links {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#links a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+#links a:hover {
+    text-decoration: underline;
+}
+
+ .container  input {
+    margin: 15px;
+    height: 45px;
+   
+} 
+
+ label > input {
+    margin: 15px;
+    height : 20px ;
+}   
+
+#submit {
+    margin: 15px;
+    align-items: center;
+    max-width: 500px;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+#submit:hover {
+    background-color: #2980b9;
+}
+
+#email,
+#psw {
+    margin-bottom: 15px;
+}
+
+#email input,
+#psw input {
+    align-items: center;
+    width: 92%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#google-login {
+    text-align: center;
+    width: 500px;
+    margin-top: 15px;
+}
+
+#google-login-btn {
+    background-color: #dd4b39;
+    color: white;
+    padding: 10px; 
+    width: 100%;
+    margin: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#google-login-btn:hover {
+    background-color: #c23321;
+}
+
+.or {
+    text-align: center;
+    margin: 15px;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 600px) {
+    #log {
+        padding: 10px;
+    }
+
+    #email,
+    #psw {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+/* Sign up */
+#ln , #phone {
+   max-width:350px;
+}
+
+
+h1{
+    text-align: center;
+    margin: 15px;
+}
+
+p{
+    margin: 15px;
+    text-align: center;
+}
+/* #block {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    text-align: center;
+} */
+
+#block input {
+    width: 300px;
+    height: 40px;
+    /* margin: 15px;  */
+}
+
+span {
+    color: red;
+}
+
+label {
+    margin : 19px 
+} 
+
+#city input {
+    width: 740px;
+    height: 40px;
+}
+
+ #city {
+    text-align: center; 
+} 
+
+#psw2 input {
+    width: 300px;
+    height: 40px;
+    margin: 15px auto; 
+}
+
+#form-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    border: solid black 1px;
+    background-color: white;
+}
+
+  #block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+} 
+
+#block > div {
+    flex: 1;
+} 
+
+label {
+    display: block;
+    /* margin-bottom: 5px; */
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+button {
+    width: 100%;
+    /* padding: 10px; */
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+
+#form-container {
+    max-width: 900px;
+    margin: 0 auto; 
+    padding: 20px;
+    border: solid black 1px;
+}
+
+#submit2 {
+    align-items: center;
+    max-width: 500px;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    margin-left: 211px;
+}
+
+#submit2:hover {
+    background-color: #2980b9;
+}
+
+@media only screen and (max-width: 600px) {
+    input {
+        margin-bottom: 10px;
+    }
+}
